@@ -1,0 +1,595 @@
+body {
+    margin: 0px;
+    overflow: hidden;
+    font-family: "Proxima Nova";
+    color: #494949;
+
+}
+
+h1, h2, h3 {
+    margin: 0;
+}
+
+h1 {
+    color: #e1e553;
+    font-size: 5em;
+    margin-bottom: 0;
+}
+
+h2 {
+    font-size: 1.5em;
+}
+
+h3 {
+    font-weight: 400;
+    color: #b2b3b3;
+    font-size: 1.2em;
+}
+
+p {
+    line-height: 160%;
+}
+
+a {
+    text-decoration: none;
+    color: #494949;
+
+}
+
+.button-wrapper {
+    margin: 25px 20%;
+}
+
+.button {
+    border: 1px solid #494949;
+    border-radius: 20px;
+    padding: 7px;
+    text-align: center;
+}
+
+.button a {
+    padding: 20px;
+    font-weight: 600;
+    font-size: 1.1em;
+}
+
+/***********Parallax**************/
+.main-content {
+    perspective: 1px;
+    height: 100vh;
+    overflow-y: auto;
+
+}
+
+.parallax {
+    overflow-x: hidden;
+    perspective-origin-x: 100%;
+
+}
+
+.parallax-layer {
+    transform-origin-x: 100%;
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+}
+
+.parallax-layer-back {
+    transform: translateZ(-2px) scale(3);
+}
+
+.parallax-layer-middle {
+    transform: translateZ(-2.5px) scale(3.5);
+}
+
+.parallax-layer-top {
+    top: 100vh;
+    transform: translateZ(-2px) scale(3);
+}
+
+/*************************/
+
+#wrapper-svgs {
+    position: fixed;
+}
+
+#loader {
+
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    background: white;
+    z-index: 100;
+}
+
+.wrapper-svgs {
+    position: relative;
+    width: 100%;
+    height: 100%;
+
+}
+
+#white {
+    background: white;
+    top: -14px;
+    width: 100%;
+    height: 12vh;
+    padding-bottom: 7px;
+    position: fixed;
+    z-index: -1;
+}
+
+.navigation {
+    top: 0;
+    width: 100%;
+    position: fixed;
+    z-index: 11;
+    height: 40px;
+    transition: top 0.2s linear;
+}
+
+.nav-elements {
+    background: white;
+    border-bottom: 1px solid #efefef;
+    margin: 0;
+    padding: 0px 45px;
+    font-weight: 700;
+    list-style-type: none;
+}
+
+.nav-elements li {
+    padding: 12px 15px;
+    font-size: 1.2em;
+    display: inline-block;
+
+}
+
+.nav-elements li a {
+    text-decoration: none;
+    color: #e1e553;
+    cursor: pointer;
+
+}
+
+#name {
+    padding: 10px 15px;
+}
+
+#name a {
+    font-size: 1.2em;
+    color: #494949;
+
+}
+
+.right-nav {
+    float: right;
+    padding: 12px 15px 0px 0px;
+}
+
+#space {
+    position: absolute;
+    z-index: -2;
+    width: 80%;
+    left: 0;
+
+}
+
+.home-images {
+    position: absolute;
+    width: 100%;
+
+}
+
+.landscape {
+    margin-top: -10%;
+}
+
+#developer {
+    margin-top: 14.5%;
+    width: 60%;
+    margin-left: 12%;
+    transition: .1s ease;
+}
+
+#designer {
+    margin-top: 12.5%;
+    width: 63%;
+    margin-left: 10.4%;
+    transition: .1s ease;
+
+}
+
+#moon {
+    padding-top: 25%;
+}
+
+#mountain {
+    padding-top: 26%;
+}
+
+#trees {
+    padding-top: 35%;
+}
+
+.fixed {
+    position: fixed;
+    z-index: -1;
+}
+
+.about-wrapper p {
+    margin-top: 0;
+    font-size: 1.1em;
+    font-weight: 200;
+}
+
+.icons-wrapper {
+    text-align: center;
+}
+
+.icon {
+    display: inline-block;
+    width: 13%;
+}
+
+.icon svg {
+    cursor: pointer;
+}
+
+.project {
+
+    border-top: 1px solid #f2f2f2;
+}
+
+.project-wrapper {
+    height: 200px;
+    position: relative;
+    padding: 20px 100px;
+    overflow: hidden;
+}
+
+.project-text, .project-image {
+    display: inline-block;
+}
+
+.project-text {
+    padding-top: 70px;
+    vertical-align: top;
+}
+
+.project-image {
+    background: #f8f8f8;
+    position: absolute;
+
+    width: 30%;
+    padding: 17px
+}
+
+.project-image-right {
+    right: 100px;
+}
+
+.project-image-left {
+    left: 100px;
+}
+
+.project-image img {
+    opacity: .7;
+    width: 100%;
+    height: auto;
+    -webkit-box-shadow: 0px 0px 10px -1px rgba(0, 0, 0, 0.5);
+    -moz-box-shadow: 0px 0px 10px -1px rgba(0, 0, 0, 0.5);
+    box-shadow: 0px 0px 10px -1px rgba(0, 0, 0, 0.5);
+}
+
+#mobile-menue {
+    display: none;
+    position: fixed;
+    width: 100%;
+    opacity: .8;
+    z-index: 3;
+    height: 100%;
+    background: white;
+}
+
+.menue {
+    float: right;
+    letter-spacing: 1px;
+}
+
+#about-wrapper {
+    margin: 260px 100px 20px;
+}
+
+.hideme {
+    opacity: 0;
+    position: relative;
+    top: 30px;
+}
+
+.hamburger {
+    display: none;
+}
+
+/*Huntington News Page*/
+
+.header-section {
+    margin-top: 30px;
+    background: #f8f8f8;
+    text-align: center;
+    position: relative;
+    height: 470px;
+    overflow: hidden;
+}
+
+.header-section h1 {
+    font-size: 2em;
+    color: #029494;
+
+    padding-top: 10px;
+
+}
+
+.header-section h3 {
+    font-size: 1em;
+}
+
+.section {
+    margin: 20px 0px;
+}
+
+.header-section .text-wrapper {
+    padding: 60px;
+    width: 40%;
+    text-align: left;
+}
+
+.img-wrapper {
+    text-align: center;
+}
+
+.section-image {
+    width: 60%;
+    border-radius: 6px;
+    -webkit-box-shadow: 0px 0px 10px -1px rgba(0, 0, 0, 0.5);
+    -moz-box-shadow: 0px 0px 10px -1px rgba(0, 0, 0, 0.5);
+    box-shadow: 0px 0px 10px -1px rgba(0, 0, 0, 0.5);
+}
+
+.header-image {
+    top: 90px;
+    width: 50%;
+    position: absolute;
+
+}
+
+.text-section, .image-section {
+    height: 300px;
+}
+
+.text-section .text-wrapper {
+    padding: 60px 100px;
+}
+
+#hamburger {
+    display: none;
+}
+
+/********************************/
+/*Medium Screens/ Ipad Landscape*/
+
+/*Ipad*/
+@media (max-width: 768px ) {
+    .nav-elements {
+        padding: 0px;
+    }
+
+    .parallax-layer-back {
+        padding-top: 200px;
+    }
+
+    .parallax-layer-middle {
+        padding-top: 160px;
+        transform: translateZ(-3px) scale(4.4);
+
+    }
+
+    .parallax-layer-top {
+        top: 100vh;
+    }
+
+    .parallax {
+    }
+
+    .about-wrapper {
+        padding: 0 50px;
+    }
+
+    .project-text {
+        width: 45%;
+    }
+
+    .project-image {
+        width: 44%;
+        margin-top: 20px;
+    }
+
+}
+
+@media (max-width: 1000px) {
+    /**Portfolio Pages*/
+    .header-section {
+        height: 350px;
+    }
+
+    .text-section, .image-section {
+        height: 400px;
+    }
+
+    .project-wrapper {
+        padding: 20px 20px;
+    }
+
+    .project-image-right {
+        right: 20px;
+    }
+
+    /*about section */
+    #about-wrapper {
+        margin: 260px 30px 30px;
+    }
+}
+
+/*Portfolio Header changes to center */
+@media (max-width: 700px) {
+    .header-section {
+        height: 550px;
+    }
+
+    .text-section, .image-section {
+        height: 400px;
+    }
+
+    .header-section .text-wrapper {
+        width: 100%;
+        height: auto;
+        padding: 0;
+        text-align: left;
+        padding-top: 10%;
+    }
+
+    .header-image {
+        position: absolute;
+        width: 80%;
+        margin-left: auto;
+        margin-right: auto;
+        left: 0;
+        right: 0;
+        top: 250px;
+
+    }
+
+    .header-section h1, .header-section h3 {
+        padding: 10px 20px 0px;
+    }
+
+    .button-wrapper {
+        margin: 20px auto;
+        width: 60%;
+    }
+
+    .button {
+        margin-top: 15px;
+
+    }
+
+    .icon {
+        width:25%;
+    }
+
+}
+
+@media (max-width: 468px) {
+    .nav-elements li {
+        padding: 10px 8px;
+        font-size: 1em;
+    }
+
+    #name a {
+        font-size: 1em;
+    }
+
+    .parallax-layer-back {
+
+    }
+    .parallax-layer-middle {
+        padding-top: 188px;
+
+    }
+    .home-images {
+        width: 200%;
+    }
+
+    #space {
+        width: 160%;
+        top: 110px;
+
+    }
+
+    #landscape {
+        width: 200%;
+        margin-left: -14%;
+        margin-top: -70%;
+    }
+
+    #designer {
+        margin-top: -24.5%;
+        width: 125%;
+        margin-left: 7%;
+    }
+
+    #developer {
+        margin-top: -20.5%;
+        width: 117%;
+        margin-left: 11%;
+    }
+
+    #mountain {
+        padding-top: 17%;
+        margin-left: -32%;
+
+    }
+
+    #trees {
+        margin-left: -32%;
+    }
+
+    .header-section h1 {
+        font-size: 1.8em;
+    }
+
+    .header-image {
+        top: 220px;
+    }
+
+    .text-section .text-wrapper {
+        padding: 15px;
+    }
+
+    /*about section */
+    .about-wrapper {
+        padding: 0 ;
+    }
+
+    .icon {
+        width:39%;
+    }
+    /*project section */
+    .project-wrapper {
+        height: 230px;
+        padding-top: 30px;
+    }
+
+    .project-text, .project-image {
+        display: block;
+    }
+
+    .project-text {
+        padding-top: 0px;
+        width: 100%;
+    }
+
+    .project-image {
+        width: 63%;
+        margin-top: 25px;
+    }
+}
+
+/*ONLY MOBILE STYLES */
+@media (max-device-width: 468px) {
+    .header-section {
+        height: 83vh;
+    }
+
+}
